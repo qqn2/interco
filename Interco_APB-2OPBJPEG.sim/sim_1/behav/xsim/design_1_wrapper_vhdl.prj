@@ -1,0 +1,48 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_axi_apb_bridge_0_0/sim/design_1_axi_apb_bridge_0_0.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/sim/design_1_axi_fifo_mm_s_0_0.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/AC_CR_ROM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/AC_ROM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/JPEG_PKG.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/SUB_RAMZ.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/multiplier.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/SUB_RAMZ_LUT.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/BUF_FIFO.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/bytestuffer/ByteStuffer.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/SingleSM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/control/CtrlSM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/MDCT_PKG.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/DBUFCTL.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/DCT1D.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/DCT2D.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/DC_CR_ROM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/DC_ROM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/FIFO.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/DoubleFifo.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/RAMZ.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/RAM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/ROME.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/ROMO.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/MDCT.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/FDCT.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/jfifgen/HeaderRAM.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/hostif/HostIF.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/Huffman.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/jfifgen/JFIFGen.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/zigzag/ZIGZAG.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/zigzag/ZZ_TOP.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/ROMR.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/r_divider.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/QUANTIZER.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/QUANT_TOP.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/rle/RLE.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/rle/RleDoubleFifo.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/rle/RLE_TOP.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/outmux/OutMux.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/top/JpegEnc.vhd" \
+"../../../../Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_JpegEnc_0_0/sim/design_1_JpegEnc_0_0.vhd" \
+
+# Do not sort compile order
+nosort

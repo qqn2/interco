@@ -1,0 +1,56 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 430 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 450 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -y 300 -defaultsOSRD
+preplace inst apb2opb_0 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 310 -defaultsOSRD
+preplace inst axi_apb_bridge_0 -pg 1 -lvl 3 -y 280 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 610 -defaultsOSRD
+preplace inst JpegEnc_0 -pg 1 -lvl 5 -y 190 -defaultsOSRD
+preplace inst axi_fifo_mm_s_0 -pg 1 -lvl 3 -y 650 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 480 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 6 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc JpegEnc_0_ram_wraddr 1 5 1 2100
+preplace netloc JpegEnc_0_iram_fifo_afull 1 3 3 NJ 630 NJ 630 2060
+preplace netloc JpegEnc_0_OPB_DBus_out 1 3 2 1200 10 1630J
+preplace netloc axi_apb_bridge_0_m_apb_penable 1 3 1 1130
+preplace netloc axi_apb_bridge_0_APB_M 1 3 1 1110
+preplace netloc JpegEnc_0_ram_byte 1 5 1 2110
+preplace netloc JpegEnc_0_OPB_XferAck 1 3 2 1210 20 1610J
+preplace netloc apb2opb_0_OPB_DBus_in 1 4 1 1630
+preplace netloc axi_fifo_mm_s_0_axi_str_txd_tvalid 1 3 2 1150J 420 1660
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 410
+preplace netloc axi_apb_bridge_0_m_apb_psel 1 3 1 1180
+preplace netloc apb2opb_0_m_apb_prdata 1 3 1 1160J
+preplace netloc JpegEnc_0_OPB_toutSup 1 3 3 1240 400 NJ 400 2070
+preplace netloc axi_apb_bridge_0_m_apb_paddr 1 3 1 1120
+preplace netloc apb2opb_0_OPB_BE 1 4 1 1610
+preplace netloc axi_fifo_mm_s_0_axi_str_txd_tdata 1 3 2 1230J 460 1670
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -20 210 390
+preplace netloc JpegEnc_0_ram_wren 1 5 1 2090
+preplace netloc apb2opb_0_OPB_RNW 1 4 1 1620
+preplace netloc axi_apb_bridge_0_m_apb_pwrite 1 3 1 1170
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 1 420
+preplace netloc apb2opb_0_OPB_select 1 4 1 1630
+preplace netloc processing_system7_0_FIXED_IO 1 1 6 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc JpegEnc_0_OPB_errAck 1 3 2 1220 30 1600J
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 430 340 730 440 NJ 440 1650 380 2110J
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 710
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 N
+preplace netloc apb2opb_0_m_apb_pready 1 3 1 1150J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -10 580 400 750 720 410 NJ 410 1640 370 2100J
+preplace netloc apb2opb_0_m_apb_pslverr 1 3 1 1140J
+preplace netloc JpegEnc_0_OPB_retry 1 3 3 1230 390 NJ 390 2080
+preplace netloc axi_apb_bridge_0_m_apb_pwdata 1 3 1 1190
+preplace netloc apb2opb_0_OPB_ABus 1 4 1 1600
+levelinfo -pg 1 -40 190 570 930 1420 1880 2240 2390 -top 0 -bot 960
+",
+}
+{
+   da_axi4_cnt: "3",
+   da_clkrst_cnt: "3",
+   da_ps7_cnt: "1",
+}

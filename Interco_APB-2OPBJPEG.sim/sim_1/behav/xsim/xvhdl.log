@@ -1,0 +1,85 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_axi_apb_bridge_0_0/sim/design_1_axi_apb_bridge_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_apb_bridge_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_rst_ps7_0_50M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/sim/design_1_axi_fifo_mm_s_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_fifo_mm_s_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/AC_CR_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AC_CR_ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/AC_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AC_ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/JPEG_PKG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/SUB_RAMZ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SUB_RAMZ
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/SUB_RAMZ_LUT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SUB_RAMZ_LUT
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/buffifo/BUF_FIFO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BUF_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/bytestuffer/ByteStuffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ByteStuffer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/SingleSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SingleSM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/control/CtrlSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CtrlSM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/MDCT_PKG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/DBUFCTL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DBUFCTL
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/DCT1D.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DCT1D
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/DCT2D.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DCT2D
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/DC_CR_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DC_CR_ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/DC_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DC_ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/FIFO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAMF
+INFO: [VRFC 10-307] analyzing entity FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/DoubleFifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DoubleFifo
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/common/RAMZ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAMZ
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/ROME.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROME
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/ROMO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROMO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/MDCT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MDCT
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/mdct/FDCT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FDCT
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/jfifgen/HeaderRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HeaderRam
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/hostif/HostIF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HostIF
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/huffman/Huffman.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Huffman
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/jfifgen/JFIFGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity JFIFGen
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/zigzag/ZIGZAG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity zigzag
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/zigzag/ZZ_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZZ_TOP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/ROMR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROMR
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/r_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity r_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/QUANTIZER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity quantizer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/quantizer/QUANT_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity QUANT_TOP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/rle/RLE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rle
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/rle/RleDoubleFifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RleDoubleFifo
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/rle/RLE_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RLE_TOP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/outmux/OutMux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OutMux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ipshared/2748/top/JpegEnc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity JpegEnc
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.ip_user_files/bd/design_1/ip/design_1_JpegEnc_0_0/sim/design_1_JpegEnc_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_JpegEnc_0_0

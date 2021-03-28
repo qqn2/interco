@@ -1,0 +1,557 @@
+
+*** Running vivado
+    with args -log design_1_axi_apb_bridge_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_apb_bridge_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_apb_bridge_0_0.tcl -notrace
+Command: synth_design -top design_1_axi_apb_bridge_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3676 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1277.676 ; gain = 87.996 ; free physical = 56134 ; free virtual = 61218
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_apb_bridge_0_0' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ip/design_1_axi_apb_bridge_0_0/synth/design_1_axi_apb_bridge_0_0.vhd:90]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: axi_apb_bridge_inst - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_APB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_APB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_APB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_M_APB_PROTOCOL bound to: apb3 - type: string 
+	Parameter C_BASEADDR bound to: 32'b01000011110000010000000000000000 
+	Parameter C_HIGHADDR bound to: 32'b01000011110000011111111111111111 
+	Parameter C_S_AXI_RNG2_BASEADDR bound to: 32'b00010000000000000000000000000000 
+	Parameter C_S_AXI_RNG2_HIGHADDR bound to: 32'b00011111111111111111111111111111 
+	Parameter C_S_AXI_RNG3_BASEADDR bound to: 32'b00100000000000000000000000000000 
+	Parameter C_S_AXI_RNG3_HIGHADDR bound to: 32'b00101111111111111111111111111111 
+	Parameter C_S_AXI_RNG4_BASEADDR bound to: 32'b00110000000000000000000000000000 
+	Parameter C_S_AXI_RNG4_HIGHADDR bound to: 32'b00111111111111111111111111111111 
+	Parameter C_S_AXI_RNG5_BASEADDR bound to: 32'b01000000000000000000000000000000 
+	Parameter C_S_AXI_RNG5_HIGHADDR bound to: 32'b01001111111111111111111111111111 
+	Parameter C_S_AXI_RNG6_BASEADDR bound to: 32'b01010000000000000000000000000000 
+	Parameter C_S_AXI_RNG6_HIGHADDR bound to: 32'b01011111111111111111111111111111 
+	Parameter C_S_AXI_RNG7_BASEADDR bound to: 32'b01100000000000000000000000000000 
+	Parameter C_S_AXI_RNG7_HIGHADDR bound to: 32'b01101111111111111111111111111111 
+	Parameter C_S_AXI_RNG8_BASEADDR bound to: 32'b01110000000000000000000000000000 
+	Parameter C_S_AXI_RNG8_HIGHADDR bound to: 32'b01111111111111111111111111111111 
+	Parameter C_S_AXI_RNG9_BASEADDR bound to: 32'b10000000000000000000000000000000 
+	Parameter C_S_AXI_RNG9_HIGHADDR bound to: 32'b10001111111111111111111111111111 
+	Parameter C_S_AXI_RNG10_BASEADDR bound to: 32'b10010000000000000000000000000000 
+	Parameter C_S_AXI_RNG10_HIGHADDR bound to: 32'b10011111111111111111111111111111 
+	Parameter C_S_AXI_RNG11_BASEADDR bound to: 32'b10100000000000000000000000000000 
+	Parameter C_S_AXI_RNG11_HIGHADDR bound to: 32'b10101111111111111111111111111111 
+	Parameter C_S_AXI_RNG12_BASEADDR bound to: 32'b10110000000000000000000000000000 
+	Parameter C_S_AXI_RNG12_HIGHADDR bound to: 32'b10111111111111111111111111111111 
+	Parameter C_S_AXI_RNG13_BASEADDR bound to: 32'b11000000000000000000000000000000 
+	Parameter C_S_AXI_RNG13_HIGHADDR bound to: 32'b11001111111111111111111111111111 
+	Parameter C_S_AXI_RNG14_BASEADDR bound to: 32'b11010000000000000000000000000000 
+	Parameter C_S_AXI_RNG14_HIGHADDR bound to: 32'b11011111111111111111111111111111 
+	Parameter C_S_AXI_RNG15_BASEADDR bound to: 32'b11100000000000000000000000000000 
+	Parameter C_S_AXI_RNG15_HIGHADDR bound to: 32'b11101111111111111111111111111111 
+	Parameter C_S_AXI_RNG16_BASEADDR bound to: 32'b11110000000000000000000000000000 
+	Parameter C_S_AXI_RNG16_HIGHADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_apb_bridge' declared at '/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:7174' bound to instance 'U0' of component 'axi_apb_bridge' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ip/design_1_axi_apb_bridge_0_0/synth/design_1_axi_apb_bridge_0_0.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'axi_apb_bridge' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:7283]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: axi_apb_bridge_inst - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_APB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_APB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_APB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_M_APB_PROTOCOL bound to: apb3 - type: string 
+	Parameter C_BASEADDR bound to: 1136721920 - type: integer 
+	Parameter C_HIGHADDR bound to: 1136787455 - type: integer 
+	Parameter C_S_AXI_RNG2_BASEADDR bound to: 268435456 - type: integer 
+	Parameter C_S_AXI_RNG2_HIGHADDR bound to: 536870911 - type: integer 
+	Parameter C_S_AXI_RNG3_BASEADDR bound to: 536870912 - type: integer 
+	Parameter C_S_AXI_RNG3_HIGHADDR bound to: 805306367 - type: integer 
+	Parameter C_S_AXI_RNG4_BASEADDR bound to: 805306368 - type: integer 
+	Parameter C_S_AXI_RNG4_HIGHADDR bound to: 1073741823 - type: integer 
+	Parameter C_S_AXI_RNG5_BASEADDR bound to: 1073741824 - type: integer 
+	Parameter C_S_AXI_RNG5_HIGHADDR bound to: 1342177279 - type: integer 
+	Parameter C_S_AXI_RNG6_BASEADDR bound to: 1342177280 - type: integer 
+	Parameter C_S_AXI_RNG6_HIGHADDR bound to: 1610612735 - type: integer 
+	Parameter C_S_AXI_RNG7_BASEADDR bound to: 1610612736 - type: integer 
+	Parameter C_S_AXI_RNG7_HIGHADDR bound to: 1879048191 - type: integer 
+	Parameter C_S_AXI_RNG8_BASEADDR bound to: 1879048192 - type: integer 
+	Parameter C_S_AXI_RNG8_HIGHADDR bound to: 2147483647 - type: integer 
+	Parameter C_S_AXI_RNG9_BASEADDR bound to: -2147483648 - type: integer 
+	Parameter C_S_AXI_RNG9_HIGHADDR bound to: -1879048193 - type: integer 
+	Parameter C_S_AXI_RNG10_BASEADDR bound to: -1879048192 - type: integer 
+	Parameter C_S_AXI_RNG10_HIGHADDR bound to: -1610612737 - type: integer 
+	Parameter C_S_AXI_RNG11_BASEADDR bound to: -1610612736 - type: integer 
+	Parameter C_S_AXI_RNG11_HIGHADDR bound to: -1342177281 - type: integer 
+	Parameter C_S_AXI_RNG12_BASEADDR bound to: -1342177280 - type: integer 
+	Parameter C_S_AXI_RNG12_HIGHADDR bound to: -1073741825 - type: integer 
+	Parameter C_S_AXI_RNG13_BASEADDR bound to: -1073741824 - type: integer 
+	Parameter C_S_AXI_RNG13_HIGHADDR bound to: -805306369 - type: integer 
+	Parameter C_S_AXI_RNG14_BASEADDR bound to: -805306368 - type: integer 
+	Parameter C_S_AXI_RNG14_HIGHADDR bound to: -536870913 - type: integer 
+	Parameter C_S_AXI_RNG15_BASEADDR bound to: -536870912 - type: integer 
+	Parameter C_S_AXI_RNG15_HIGHADDR bound to: -268435457 - type: integer 
+	Parameter C_S_AXI_RNG16_BASEADDR bound to: -268435456 - type: integer 
+	Parameter C_S_AXI_RNG16_HIGHADDR bound to: -1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'psel_decoder' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:564]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_APB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_S_AXI_RNG1_BASEADDR bound to: 1136721920 - type: integer 
+	Parameter C_S_AXI_RNG1_HIGHADDR bound to: 1136787455 - type: integer 
+	Parameter C_S_AXI_RNG2_BASEADDR bound to: 268435456 - type: integer 
+	Parameter C_S_AXI_RNG2_HIGHADDR bound to: 536870911 - type: integer 
+	Parameter C_S_AXI_RNG3_BASEADDR bound to: 536870912 - type: integer 
+	Parameter C_S_AXI_RNG3_HIGHADDR bound to: 805306367 - type: integer 
+	Parameter C_S_AXI_RNG4_BASEADDR bound to: 805306368 - type: integer 
+	Parameter C_S_AXI_RNG4_HIGHADDR bound to: 1073741823 - type: integer 
+	Parameter C_S_AXI_RNG5_BASEADDR bound to: 1073741824 - type: integer 
+	Parameter C_S_AXI_RNG5_HIGHADDR bound to: 1342177279 - type: integer 
+	Parameter C_S_AXI_RNG6_BASEADDR bound to: 1342177280 - type: integer 
+	Parameter C_S_AXI_RNG6_HIGHADDR bound to: 1610612735 - type: integer 
+	Parameter C_S_AXI_RNG7_BASEADDR bound to: 1610612736 - type: integer 
+	Parameter C_S_AXI_RNG7_HIGHADDR bound to: 1879048191 - type: integer 
+	Parameter C_S_AXI_RNG8_BASEADDR bound to: 1879048192 - type: integer 
+	Parameter C_S_AXI_RNG8_HIGHADDR bound to: 2147483647 - type: integer 
+	Parameter C_S_AXI_RNG9_BASEADDR bound to: -2147483648 - type: integer 
+	Parameter C_S_AXI_RNG9_HIGHADDR bound to: -1879048193 - type: integer 
+	Parameter C_S_AXI_RNG10_BASEADDR bound to: -1879048192 - type: integer 
+	Parameter C_S_AXI_RNG10_HIGHADDR bound to: -1610612737 - type: integer 
+	Parameter C_S_AXI_RNG11_BASEADDR bound to: -1610612736 - type: integer 
+	Parameter C_S_AXI_RNG11_HIGHADDR bound to: -1342177281 - type: integer 
+	Parameter C_S_AXI_RNG12_BASEADDR bound to: -1342177280 - type: integer 
+	Parameter C_S_AXI_RNG12_HIGHADDR bound to: -1073741825 - type: integer 
+	Parameter C_S_AXI_RNG13_BASEADDR bound to: -1073741824 - type: integer 
+	Parameter C_S_AXI_RNG13_HIGHADDR bound to: -805306369 - type: integer 
+	Parameter C_S_AXI_RNG14_BASEADDR bound to: -805306368 - type: integer 
+	Parameter C_S_AXI_RNG14_HIGHADDR bound to: -536870913 - type: integer 
+	Parameter C_S_AXI_RNG15_BASEADDR bound to: -536870912 - type: integer 
+	Parameter C_S_AXI_RNG15_HIGHADDR bound to: -268435457 - type: integer 
+	Parameter C_S_AXI_RNG16_BASEADDR bound to: -268435456 - type: integer 
+	Parameter C_S_AXI_RNG16_HIGHADDR bound to: -1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'psel_decoder' (1#1) [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:564]
+INFO: [Synth 8-638] synthesizing module 'multiplexor' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:4147]
+	Parameter C_M_APB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_APB_NUM_SLAVES bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexor' (2#1) [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:4147]
+INFO: [Synth 8-638] synthesizing module 'axilite_sif' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6097]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_M_APB_PROTOCOL bound to: apb3 - type: string 
+INFO: [Synth 8-226] default block is never used [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6345]
+INFO: [Synth 8-256] done synthesizing module 'axilite_sif' (3#1) [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6097]
+INFO: [Synth 8-638] synthesizing module 'apb_mif' [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6673]
+	Parameter C_M_APB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_APB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_APB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_M_APB_PROTOCOL bound to: apb3 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'apb_mif' (4#1) [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6673]
+INFO: [Synth 8-256] done synthesizing module 'axi_apb_bridge' (5#1) [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ipshared/8323/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:7283]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_apb_bridge_0_0' (6#1) [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ip/design_1_axi_apb_bridge_0_0/synth/design_1_axi_apb_bridge_0_0.vhd:90]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port axi_awprot[2]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port axi_awprot[1]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port axi_awprot[0]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design apb_mif has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design axilite_sif has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design axilite_sif has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design axilite_sif has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[31]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[30]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[29]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[28]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[27]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[26]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[25]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[24]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[23]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[22]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[21]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[20]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[19]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[18]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[17]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[16]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[15]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[14]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[13]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[12]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[11]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[10]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[9]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[8]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[7]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[6]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[5]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[4]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[3]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[2]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[1]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA2[0]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[31]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[30]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[29]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[28]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[27]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[26]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[25]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[24]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[23]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[22]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[21]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[20]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[19]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[18]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[17]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[16]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[15]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[14]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[13]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[12]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[11]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[10]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[9]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[8]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[7]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[6]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[5]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[4]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[3]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[2]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[1]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA3[0]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[31]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[30]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[29]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[28]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[27]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[26]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[25]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[24]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[23]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[22]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[21]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[20]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[19]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[18]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[17]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[16]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[15]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[14]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[13]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[12]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[11]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[10]
+WARNING: [Synth 8-3331] design multiplexor has unconnected port M_APB_PRDATA4[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1321.207 ; gain = 131.527 ; free physical = 56268 ; free virtual = 61361
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1321.207 ; gain = 131.527 ; free physical = 56250 ; free virtual = 61343
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ip/design_1_axi_apb_bridge_0_0/design_1_axi_apb_bridge_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ip/design_1_axi_apb_bridge_0_0/design_1_axi_apb_bridge_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.runs/design_1_axi_apb_bridge_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.runs/design_1_axi_apb_bridge_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1700.223 ; gain = 0.000 ; free physical = 55117 ; free virtual = 60250
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54971 ; free virtual = 60113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54971 ; free virtual = 60113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.runs/design_1_axi_apb_bridge_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54973 ; free virtual = 60115
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_wr_rd_cs_reg' in module 'axilite_sif'
+INFO: [Synth 8-5544] ROM "axi_wr_rd_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_wr_rd_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                axi_idle |                              000 |                              000
+               read_wait |                              001 |                              110
+                    read |                              010 |                              101
+                 rd_resp |                              011 |                              111
+              write_wait |                              100 |                              011
+            write_w_wait |                              101 |                              010
+                   write |                              110 |                              001
+                 wr_resp |                              111 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_wr_rd_cs_reg' using encoding 'sequential' in module 'axilite_sif'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54946 ; free virtual = 60088
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiplexor 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axilite_sif 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 8     
+Module apb_mif 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54916 ; free virtual = 60058
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 55057 ; free virtual = 60200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 55078 ; free virtual = 60221
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 55076 ; free virtual = 60219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54971 ; free virtual = 60114
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54970 ; free virtual = 60113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54966 ; free virtual = 60109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54968 ; free virtual = 60111
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54967 ; free virtual = 60110
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54967 ; free virtual = 60110
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    33|
+|3     |LUT3  |    36|
+|4     |LUT4  |     7|
+|5     |LUT5  |    43|
+|6     |LUT6  |    39|
+|7     |MUXF7 |     1|
+|8     |FDRE  |   143|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------+------+
+|      |Instance                    |Module         |Cells |
++------+----------------------------+---------------+------+
+|1     |top                         |               |   303|
+|2     |  U0                        |axi_apb_bridge |   303|
+|3     |    APB_MASTER_IF_MODULE    |apb_mif        |   108|
+|4     |    AXILITE_SLAVE_IF_MODULE |axilite_sif    |   194|
+|5     |    MULTIPLEXOR_MODULE      |multiplexor    |     1|
++------+----------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 54966 ; free virtual = 60109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 490 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1700.223 ; gain = 131.527 ; free physical = 55000 ; free virtual = 60143
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1700.223 ; gain = 510.543 ; free physical = 55000 ; free virtual = 60143
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 1700.223 ; gain = 535.371 ; free physical = 54990 ; free virtual = 60134
+INFO: [Common 17-1381] The checkpoint '/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.runs/design_1_axi_apb_bridge_0_0_synth_1/design_1_axi_apb_bridge_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.srcs/sources_1/bd/design_1/ip/design_1_axi_apb_bridge_0_0/design_1_axi_apb_bridge_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/paprika/Desktop/CovaDalamas/Vivado/Interco_APB-2OPBJPEG/Interco_APB-2OPBJPEG.runs/design_1_axi_apb_bridge_0_0_synth_1/design_1_axi_apb_bridge_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_apb_bridge_0_0_utilization_synth.rpt -pb design_1_axi_apb_bridge_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1724.234 ; gain = 0.000 ; free physical = 55503 ; free virtual = 60648
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 27 11:57:15 2021...
