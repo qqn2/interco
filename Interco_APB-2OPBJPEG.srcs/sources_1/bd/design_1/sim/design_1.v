@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Mon Mar 29 01:05:43 2021
+//Date        : Mon Mar 29 18:39:20 2021
 //Host        : paprika running 64-bit Ubuntu 18.04.5 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=17,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -54,6 +54,8 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
+  wire [0:0]Ground_4_dout;
+  wire [7:0]Ground_8_dout;
   wire [31:0]JpegEnc_0_OPB_DBus_out;
   wire JpegEnc_0_OPB_XferAck;
   wire JpegEnc_0_OPB_errAck;
@@ -63,6 +65,8 @@ module design_1
   wire [7:0]JpegEnc_0_ram_byte;
   wire [23:0]JpegEnc_0_ram_wraddr;
   wire JpegEnc_0_ram_wren;
+  wire [2:0]Net;
+  wire [31:0]always_only_1_word1_dout;
   wire [31:0]apb2opb_0_OPB_ABus;
   wire [3:0]apb2opb_0_OPB_BE;
   wire [31:0]apb2opb_0_OPB_DBus_in;
@@ -174,7 +178,19 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_interconnect_aresetn;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
+  wire [3:0]xlconcat_0_dout;
+  wire [31:0]xlconcat_0_dout1;
+  wire [23:0]xlconstant_0_dout;
+  wire [23:0]xlslice_0_Dout;
 
+  design_1_Ground_3_0 Ground_1
+       (.dout(Ground_4_dout));
+  design_1_xlconstant_0_1 Ground_24
+       (.dout(xlconstant_0_dout));
+  design_1_xlconstant_0_0 Ground_3
+       (.dout(Net));
+  design_1_Ground_24_0 Ground_8
+       (.dout(Ground_8_dout));
   design_1_JpegEnc_0_0 JpegEnc_0
        (.CLK(processing_system7_0_FCLK_CLK0),
         .OPB_ABus(apb2opb_0_OPB_ABus),
@@ -189,12 +205,24 @@ module design_1
         .OPB_toutSup(JpegEnc_0_OPB_toutSup),
         .RST(rst_ps7_0_50M_peripheral_aresetn),
         .iram_fifo_afull(JpegEnc_0_iram_fifo_afull),
-        .iram_wdata(axi_fifo_mm_s_0_axi_str_txd_tdata[23:0]),
+        .iram_wdata(xlslice_0_Dout),
         .iram_wren(axi_fifo_mm_s_0_axi_str_txd_tvalid),
-        .outif_almost_full(1'b0),
+        .outif_almost_full(Ground_4_dout),
         .ram_byte(JpegEnc_0_ram_byte),
         .ram_wraddr(JpegEnc_0_ram_wraddr),
         .ram_wren(JpegEnc_0_ram_wren));
+  design_1_xlconcat_0_1 adress_24
+       (.In0(JpegEnc_0_ram_wraddr),
+        .In1(Ground_8_dout),
+        .dout(xlconcat_0_dout1));
+  design_1_always_only_1_word_0 always_only_1_byte
+       (.In0(JpegEnc_0_ram_byte),
+        .In1(xlconstant_0_dout),
+        .dout(always_only_1_word1_dout));
+  design_1_xlconcat_0_0 always_only_1_word
+       (.In0(JpegEnc_0_ram_wren),
+        .In1(Net),
+        .dout(xlconcat_0_dout));
   design_1_apb2opb_0_0 apb2opb_0
        (.OPB_ABus(apb2opb_0_OPB_ABus),
         .OPB_BE(apb2opb_0_OPB_BE),
@@ -348,11 +376,11 @@ module design_1
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
   design_1_blk_mem_gen_0_0 blk_mem_gen_0
-       (.addra(JpegEnc_0_ram_wraddr),
+       (.addra(xlconcat_0_dout1),
         .clka(processing_system7_0_FCLK_CLK0),
-        .dina(JpegEnc_0_ram_byte),
+        .dina(always_only_1_word1_dout),
         .rsta(rst_ps7_0_50M_peripheral_aresetn),
-        .wea({JpegEnc_0_ram_wren,JpegEnc_0_ram_wren,JpegEnc_0_ram_wren,JpegEnc_0_ram_wren}));
+        .wea(xlconcat_0_dout));
   design_1_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
@@ -425,6 +453,9 @@ module design_1
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
+  design_1_xlslice_0_0 xlslice_0
+       (.Din(axi_fifo_mm_s_0_axi_str_txd_tdata),
+        .Dout(xlslice_0_Dout));
 endmodule
 
 module design_1_axi_interconnect_0_0

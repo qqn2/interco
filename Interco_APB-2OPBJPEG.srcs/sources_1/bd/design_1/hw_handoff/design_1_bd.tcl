@@ -161,8 +161,60 @@ proc create_root_design { parentCell } {
 
   # Create ports
 
+  # Create instance: Ground_1, and set properties
+  set Ground_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 Ground_1 ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {0} \
+   CONFIG.CONST_WIDTH {1} \
+ ] $Ground_1
+
+  # Create instance: Ground_3, and set properties
+  set Ground_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 Ground_3 ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {0} \
+   CONFIG.CONST_WIDTH {3} \
+ ] $Ground_3
+
+  # Create instance: Ground_8, and set properties
+  set Ground_8 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 Ground_8 ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {0} \
+   CONFIG.CONST_WIDTH {8} \
+ ] $Ground_8
+
+  # Create instance: Ground_24, and set properties
+  set Ground_24 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 Ground_24 ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {0} \
+   CONFIG.CONST_WIDTH {24} \
+ ] $Ground_24
+
   # Create instance: JpegEnc_0, and set properties
   set JpegEnc_0 [ create_bd_cell -type ip -vlnv user.org:user:JpegEnc:1.0 JpegEnc_0 ]
+
+  # Create instance: adress_24, and set properties
+  set adress_24 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 adress_24 ]
+  set_property -dict [ list \
+   CONFIG.IN0_WIDTH {24} \
+   CONFIG.IN1_WIDTH {8} \
+   CONFIG.NUM_PORTS {2} \
+ ] $adress_24
+
+  # Create instance: always_only_1_byte, and set properties
+  set always_only_1_byte [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 always_only_1_byte ]
+  set_property -dict [ list \
+   CONFIG.IN0_WIDTH {8} \
+   CONFIG.IN1_WIDTH {24} \
+   CONFIG.NUM_PORTS {2} \
+ ] $always_only_1_byte
+
+  # Create instance: always_only_1_word, and set properties
+  set always_only_1_word [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 always_only_1_word ]
+  set_property -dict [ list \
+   CONFIG.IN0_WIDTH {1} \
+   CONFIG.IN1_WIDTH {3} \
+   CONFIG.NUM_PORTS {2} \
+ ] $always_only_1_word
 
   # Create instance: apb2opb_0, and set properties
   set apb2opb_0 [ create_bd_cell -type ip -vlnv user.org:user:apb2opb:1.0 apb2opb_0 ]
@@ -194,6 +246,7 @@ proc create_root_design { parentCell } {
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
    CONFIG.Use_Byte_Write_Enable {true} \
    CONFIG.Use_RSTA_Pin {true} \
+   CONFIG.Write_Depth_A {8192} \
    CONFIG.Write_Width_A {32} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_0
@@ -676,6 +729,13 @@ proc create_root_design { parentCell } {
   # Create instance: rst_ps7_0_50M, and set properties
   set rst_ps7_0_50M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_50M ]
 
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {23} \
+   CONFIG.DOUT_WIDTH {24} \
+ ] $xlslice_0
+
   # Create interface connections
   connect_bd_intf_net -intf_net axi_apb_bridge_0_APB_M [get_bd_intf_pins apb2opb_0/tt] [get_bd_intf_pins axi_apb_bridge_0/APB_M]
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins axi_apb_bridge_0/AXI4_LITE] [get_bd_intf_pins axi_interconnect_0/M00_AXI]
@@ -685,15 +745,19 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
 
   # Create port connections
+  connect_bd_net -net Ground_4_dout [get_bd_pins Ground_1/dout] [get_bd_pins JpegEnc_0/outif_almost_full]
+  connect_bd_net -net Ground_8_dout [get_bd_pins Ground_8/dout] [get_bd_pins adress_24/In1]
   connect_bd_net -net JpegEnc_0_OPB_DBus_out [get_bd_pins JpegEnc_0/OPB_DBus_out] [get_bd_pins apb2opb_0/OPB_DBus_out]
   connect_bd_net -net JpegEnc_0_OPB_XferAck [get_bd_pins JpegEnc_0/OPB_XferAck] [get_bd_pins apb2opb_0/OPB_XferAck]
   connect_bd_net -net JpegEnc_0_OPB_errAck [get_bd_pins JpegEnc_0/OPB_errAck] [get_bd_pins apb2opb_0/OPB_errAck]
   connect_bd_net -net JpegEnc_0_OPB_retry [get_bd_pins JpegEnc_0/OPB_retry] [get_bd_pins apb2opb_0/OPB_retry]
   connect_bd_net -net JpegEnc_0_OPB_toutSup [get_bd_pins JpegEnc_0/OPB_toutSup] [get_bd_pins apb2opb_0/OPB_toutSup]
   connect_bd_net -net JpegEnc_0_iram_fifo_afull [get_bd_pins JpegEnc_0/iram_fifo_afull] [get_bd_pins axi_fifo_mm_s_0/axi_str_txd_tready]
-  connect_bd_net -net JpegEnc_0_ram_byte [get_bd_pins JpegEnc_0/ram_byte] [get_bd_pins blk_mem_gen_0/dina]
-  connect_bd_net -net JpegEnc_0_ram_wraddr [get_bd_pins JpegEnc_0/ram_wraddr] [get_bd_pins blk_mem_gen_0/addra]
-  connect_bd_net -net JpegEnc_0_ram_wren [get_bd_pins JpegEnc_0/ram_wren] [get_bd_pins blk_mem_gen_0/wea]
+  connect_bd_net -net JpegEnc_0_ram_byte [get_bd_pins JpegEnc_0/ram_byte] [get_bd_pins always_only_1_byte/In0]
+  connect_bd_net -net JpegEnc_0_ram_wraddr [get_bd_pins JpegEnc_0/ram_wraddr] [get_bd_pins adress_24/In0]
+  connect_bd_net -net JpegEnc_0_ram_wren [get_bd_pins JpegEnc_0/ram_wren] [get_bd_pins always_only_1_word/In0]
+  connect_bd_net -net Net [get_bd_pins Ground_3/dout] [get_bd_pins always_only_1_word/In1]
+  connect_bd_net -net always_only_1_word1_dout [get_bd_pins always_only_1_byte/dout] [get_bd_pins blk_mem_gen_0/dina]
   connect_bd_net -net apb2opb_0_OPB_ABus [get_bd_pins JpegEnc_0/OPB_ABus] [get_bd_pins apb2opb_0/OPB_ABus]
   connect_bd_net -net apb2opb_0_OPB_BE [get_bd_pins JpegEnc_0/OPB_BE] [get_bd_pins apb2opb_0/OPB_BE]
   connect_bd_net -net apb2opb_0_OPB_DBus_in [get_bd_pins JpegEnc_0/OPB_DBus_in] [get_bd_pins apb2opb_0/OPB_DBus_in]
@@ -707,12 +771,16 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi_apb_bridge_0_m_apb_psel [get_bd_pins apb2opb_0/m_apb_psel] [get_bd_pins axi_apb_bridge_0/m_apb_psel]
   connect_bd_net -net axi_apb_bridge_0_m_apb_pwdata [get_bd_pins apb2opb_0/m_apb_pwdata] [get_bd_pins axi_apb_bridge_0/m_apb_pwdata]
   connect_bd_net -net axi_apb_bridge_0_m_apb_pwrite [get_bd_pins apb2opb_0/m_apb_pwrite] [get_bd_pins axi_apb_bridge_0/m_apb_pwrite]
-  connect_bd_net -net axi_fifo_mm_s_0_axi_str_txd_tdata [get_bd_pins JpegEnc_0/iram_wdata] [get_bd_pins axi_fifo_mm_s_0/axi_str_txd_tdata]
+  connect_bd_net -net axi_fifo_mm_s_0_axi_str_txd_tdata [get_bd_pins axi_fifo_mm_s_0/axi_str_txd_tdata] [get_bd_pins xlslice_0/Din]
   connect_bd_net -net axi_fifo_mm_s_0_axi_str_txd_tvalid [get_bd_pins JpegEnc_0/iram_wren] [get_bd_pins axi_fifo_mm_s_0/axi_str_txd_tvalid]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins JpegEnc_0/CLK] [get_bd_pins axi_apb_bridge_0/s_axi_aclk] [get_bd_pins axi_fifo_mm_s_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins rst_ps7_0_50M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins JpegEnc_0/RST] [get_bd_pins axi_apb_bridge_0/s_axi_aresetn] [get_bd_pins axi_fifo_mm_s_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins always_only_1_word/dout] [get_bd_pins blk_mem_gen_0/wea]
+  connect_bd_net -net xlconcat_0_dout1 [get_bd_pins adress_24/dout] [get_bd_pins blk_mem_gen_0/addra]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins Ground_24/dout] [get_bd_pins always_only_1_byte/In1]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins JpegEnc_0/iram_wdata] [get_bd_pins xlslice_0/Dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs apb2opb_0/tt/i] SEG_apb2opb_0_i

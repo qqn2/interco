@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Sat Mar 27 12:11:30 2021
+| Date         : Mon Mar 29 18:40:58 2021
 | Host         : paprika running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -173,6 +173,11 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
+| design_1_xlslice_0_0            |    1 |
+| design_1_xlconstant_0_1         |    1 |
+| design_1_xlconstant_0_0         |    1 |
+| design_1_xlconcat_0_1           |    1 |
+| design_1_xlconcat_0_0           |    1 |
 | design_1_xbar_0                 |    1 |
 | design_1_rst_ps7_0_50M_0        |    1 |
 | design_1_processing_system7_0_0 |    1 |
@@ -181,7 +186,10 @@ Table of Contents
 | design_1_axi_apb_bridge_0_0     |    1 |
 | design_1_auto_pc_0              |    1 |
 | design_1_apb2opb_0_0            |    1 |
+| design_1_always_only_1_word_0   |    1 |
 | design_1_JpegEnc_0_0            |    1 |
+| design_1_Ground_3_0             |    1 |
+| design_1_Ground_24_0            |    1 |
 +---------------------------------+------+
 
 
